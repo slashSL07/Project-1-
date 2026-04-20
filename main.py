@@ -27,7 +27,7 @@ else:
         print("You Win")
     elif (computer==1 and you==0):
         print("You Win")
-    else
+    else:
         print("You loose")
 
          # We can replace the ladder by the following logic ..   
