@@ -6,13 +6,11 @@
 
 '''
 import random 
-computer = random.choice([-1,0,1])
+computer = random.randint(-1, 1)
 yourchoice = (input("Enter your choice : "))
-keyvalue={"s": 1, "w":-1, "g":0}
-reverse_key_value={1 : "Snake", -1 :"Water", 0 : "Gun" }
-you = keyvalue[yourchoice]
-
-print(f"You choose {reverse_key_value[you]} \n Computer chose {reverse_key_value[computer]}")
+key = ["water", "gun", "snake"]
+you = int(input("your choice: "))
+print(f"You choose {key[you + 1]} \n Computer chose {key[computer + 1]}")
 
 
 
@@ -23,21 +21,14 @@ else:
 
     if(computer==-1 and you == 1):
         print("You win")    
-    elif (computer==1 and you==-1):
-        print("You loose")
-    elif (computer==0 and you==1):
-        print("You loose")
-    elif (computer==1 and you==0):
-        print("You Win")
-    elif (computer==-1 and you==0):
-        print("You loose")
     elif (computer==-1 and you==0):
         print("You Win")
     elif (computer==0 and you==-1):
         print("You Win")
-
-    else:
-     print("Something went wrong : ") 
+    elif (computer==1 and you==0):
+        print("You Win")
+    else
+        print("You loose")
 
          # We can replace the ladder by the following logic ..   
 
