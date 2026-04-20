@@ -29,7 +29,7 @@ while True:
             print("You Win")
         else:
             print("You loose")
-    c = print("want to play again(y/n): ")
+    c = input("want to play again(y/n): ")
     if c == "n":
         break
 
