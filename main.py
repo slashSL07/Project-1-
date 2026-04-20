@@ -9,7 +9,7 @@ import random
 computer = random.randint(-1, 1)
 yourchoice = (input("Enter your choice : "))
 key = ["water", "gun", "snake"]
-you = int(input("your choice: "))
+you = key.index(int(input("your choice: "))) - 1
 print(f"You choose {key[you + 1]} \n Computer chose {key[computer + 1]}")
 
 
